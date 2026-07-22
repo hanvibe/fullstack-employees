@@ -5,6 +5,6 @@ const PORT = process.env.PORT ?? 3000;
 
 await db.connect();
 
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}...`);
-});
+app.listenerCount(PORT, ()=> {
+  console.log (`listerning on port ${PORT}...`);
+})
